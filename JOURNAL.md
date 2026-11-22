@@ -26,5 +26,7 @@ I chose this issue because this course is my introduction to contributing to a l
 **Reproduction summary:**
 I compared the hybrid retrieval description in `docs/ARCHITECTURE.md` with `HybridRetriever` in `rag/retriever/hybrid.py`. The guide mentions vector and keyword search but omits the score normalization, default weights, and blending formula that the code uses.
 
+**PLAN.md link:** [PLAN.md](./PLAN.md)
+
 **Blockers or open questions:**Should the explanation cover only how normalized vector and keyword scores are blended, or also explain how each search method produces its original score?
 Should the example include a result found by only one search method, where the missing score contributes zero?

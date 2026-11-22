@@ -21,7 +21,7 @@ I chose this issue because this course is my introduction to contributing to a l
 
 ## Unit 8 — Reproduction & solution planning
 
-**Reproduction commit link:** [add link after committing this reproduction note]
+**Reproduction commit link:** https://github.com/OluchiEmenike/pathreview-ai201-fa26-howard/commit/717553fd498a3237d23ded788fe22e325f3e13ab
 
 **Reproduction summary:**
 I compared the hybrid retrieval description in `docs/ARCHITECTURE.md` with `HybridRetriever` in `rag/retriever/hybrid.py`. The guide mentions vector and keyword search but omits the score normalization, default weights, and blending formula that the code uses.

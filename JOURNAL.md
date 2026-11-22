@@ -14,3 +14,7 @@ The architecture guide says PathReview combines vector search and keyword search
 **Setup confirmation:** The app successfully runs locally at localhost:5173
 
 **Cohort ledger:** [/] Issue added to cohort ledger
+
+**Selection Reasoning**
+
+I chose this issue because this course is my introduction to contributing to a larger codebase, and this Tier 1, good-first-issue task feels like a manageable place to practice. I read the relevant retrieval code and understand that the work is to document the existing scoring formula, default weights, and an example in `docs/ARCHITECTURE.md`, It is done when contributors can follow how the two scores are normalized and blended. The issue estimates 2–3 hours, has no stated blockers, and the change is documentation-only, so I do not expect to need code or test changes. I reviewed the issue comments and claimed it. I still need to check the cohort ledger's Claims count.

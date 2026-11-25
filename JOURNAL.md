@@ -1,10 +1,10 @@
 ## Unit 7 — Issue selection
 
-**Issue link:** [[paste link here](https://github.com/codepath/pathreview-ai201-fa26-howard/issues/11)]
+**Issue link:** [(https://github.com/codepath/pathreview-ai201-fa26-howard/issues/11)]
 
 **Issue title:** [Architecture doc doesn't explain the hybrid retrieval scoring formula]
 
-**Tier:** [/] Tier 1  [ ] Tier 2  [ ] Tier 3
+**Tier:** [X] Tier 1  [ ] Tier 2  [ ] Tier 3
 
 **Problem summary:**
 The architecture guide says PathReview combines vector search and keyword search, but it doesn’t explain how those results are scored together. In rag/retriever/hybrid.py, each set of scores is normalized and then blended using default weights of 70% vector and 30% keyword. I’ll update docs/ARCHITECTURE.md with the formula and a simple example so contributors can understand how the final ranking is calculated.
@@ -49,14 +49,16 @@ I am working after the scheduled feedback window, so I need to ask the instructo
 
 ### Check-in 2 (end of week)
 
-**PR link:** [add submitted pull request link]
+**PR link:** https://github.com/codepath/pathreview-ai201-fa26-howard/pull/112
 
 **Branch:** `docs/11-hybrid-scoring-formula`
 
-**What you built:** [Complete after the PR is submitted.]
+**What you built:**
+I updated `docs/ARCHITECTURE.md` with an explanation of the hybrid retrieval scoring behavior. The documentation now describes separate vector and BM25 result normalization, the default 0.7 vector / 0.3 keyword weights, the blended-score formula, a worked example, and missing-score handling.
 
-**Tests added or updated:** Not applicable; this is a documentation-only change.
+**Tests added or updated:**
+Not applicable; this is a documentation-only change. Ruff, Black's formatting check, mypy, `git diff --check`, and the unit test suite were run locally.
 
-**Self-review confirmation:** [ ] make check passes  [ ] make test-unit passes
+**Self-review confirmation:** [x] Equivalent project checks pass locally (`ruff`, `black --check`, `mypy`)  [x] Unit tests pass locally (`375 passed, 53 xfailed`)
 
-**Draft PR feedback received from:** [Add reviewer name/handle or note that none was received.]
+**Draft PR feedback received from:** None received; I am completing and submitting this work outside the scheduled feedback window.

@@ -57,8 +57,9 @@ I am working after the scheduled feedback window, so I need to ask the instructo
 I updated `docs/ARCHITECTURE.md` with an explanation of the hybrid retrieval scoring behavior. The documentation now describes separate vector and BM25 result normalization, the default 0.7 vector / 0.3 keyword weights, the blended-score formula, a worked example, and missing-score handling.
 
 **Tests added or updated:**
-Not applicable; this is a documentation-only change. Ruff, Black's formatting check, mypy, `git diff --check`, and the unit test suite were run locally.
+Not applicable; this is a documentation-only change.formatting check, mypy, `git diff --check`, and the unit test suite were run locally.
 
 **Self-review confirmation:** [x] Equivalent project checks pass locally (`ruff`, `black --check`, `mypy`)  [x] Unit tests pass locally (`375 passed, 53 xfailed`)
 
-**Draft PR feedback received from:** None received; I am completing and submitting this work outside the scheduled feedback window.
+**Draft PR feedback received from:** 
+I did not recieve feedback as my PR request was not sent early. 

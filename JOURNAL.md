@@ -28,5 +28,35 @@ I compared the hybrid retrieval description in `docs/ARCHITECTURE.md` with `Hybr
 
 **PLAN.md link:** [PLAN.md](./PLAN.md)
 
-**Blockers or open questions:**Should the explanation cover only how normalized vector and keyword scores are blended, or also explain how each search method produces its original score?
-Should the example include a result found by only one search method, where the missing score contributes zero?
+**Blockers or open questions:**
+- Should the explanation cover only how normalized vector and keyword scores are blended, or also explain how each search method produces its original score?
+- Should the example include a result found by only one search method, where the missing score contributes zero?
+
+## Unit 9 — Solution building & PR submission
+
+### Check-in 1 (mid-week)
+
+**Current progress:**
+Added a hybrid retrieval scoring subsection to `docs/ARCHITECTURE.md`. It explains separate max-score normalization, the default 0.7/0.3 weighted sum, a worked example, and how a missing score is handled. Validation passed: Ruff, Black formatting check, and mypy all passed; unit tests reported 375 passed and 53 expected failures. `git diff --check` also passed.
+
+**Next steps:**
+Commit and push the changes, then open a draft PR and request peer or mentor feedback before submitting it. The `make` command is unavailable in my current PowerShell, so I ran the equivalent project tools from `.venv\Scripts` directly.
+
+**Blockers:**
+I am working after the scheduled feedback window, so I need to ask the instructor whether late peer or mentor feedback is still available.
+
+---
+
+### Check-in 2 (end of week)
+
+**PR link:** [add submitted pull request link]
+
+**Branch:** `docs/11-hybrid-scoring-formula`
+
+**What you built:** [Complete after the PR is submitted.]
+
+**Tests added or updated:** Not applicable; this is a documentation-only change.
+
+**Self-review confirmation:** [ ] make check passes  [ ] make test-unit passes
+
+**Draft PR feedback received from:** [Add reviewer name/handle or note that none was received.]

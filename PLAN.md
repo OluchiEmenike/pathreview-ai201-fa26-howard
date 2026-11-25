@@ -12,11 +12,11 @@ The architecture guide describes hybrid retrieval as combining vector similarity
 - `rag/retriever/keyword_search.py` — reference for BM25 keyword scores.
 
 ### Plan
-1. Add a hybrid scoring subsection to `docs/ARCHITECTURE.md`.
-2. Explain that vector and keyword results are normalized separately by dividing each score by the maximum score in that result set.
-3. Document the default weighted-sum formula: `0.7 × normalized vector score + 0.3 × normalized keyword score`.
-4. Include a worked example, such as scores of 0.8 and 0.6 producing `0.7 × 0.8 + 0.3 × 0.6 = 0.74`.
-5. Clarify that the weights are configurable and that a missing score from one search method contributes zero; compare the wording with the implementation.
+- Add a hybrid scoring subsection to `docs/ARCHITECTURE.md`.
+-Explain that vector and keyword results are normalized separately by dividing each score by the maximum score in that result set.
+- Document the default weighted-sum formula: `0.7 × normalized vector score + 0.3 × normalized keyword score`.
+- Include a worked example, such as scores of 0.8 and 0.6 producing `0.7 × 0.8 + 0.3 × 0.6 = 0.74`.
+- Clarify that the weights are configurable and that a missing score from one search method contributes zero; compare the wording with the implementation.
 
 ### Inputs & outputs
 The inputs are a query's vector-search and keyword-search results and their scores. The documentation will show how the normalized scores are combined into a blended score used to rank each candidate chunk. For example, normalized scores of 0.8 (vector) and 0.6 (keyword) produce a blended score of 0.74 with the default weights.

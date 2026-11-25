@@ -57,9 +57,39 @@ I am working after the scheduled feedback window, so I need to ask the instructo
 I updated `docs/ARCHITECTURE.md` with an explanation of the hybrid retrieval scoring behavior. The documentation now describes separate vector and BM25 result normalization, the default 0.7 vector / 0.3 keyword weights, the blended-score formula, a worked example, and missing-score handling.
 
 **Tests added or updated:**
-Not applicable; this is a documentation-only change.formatting check, mypy, `git diff --check`, and the unit test suite were run locally.
+Not applicable; this is a documentation-only change. Ruff, Black's formatting check, mypy, `git diff --check`, and the unit test suite were run locally.
 
 **Self-review confirmation:** [x] Equivalent project checks pass locally (`ruff`, `black --check`, `mypy`)  [x] Unit tests pass locally (`375 passed, 53 xfailed`)
 
 **Draft PR feedback received from:** 
-I did not recieve feedback as my PR request was not sent early. 
+I did not receive feedback because I did not request a review early.
+
+## Unit 10 — Iteration & reflection
+
+### Reviewer feedback
+
+**Feedback received:** [ ] Yes  [x] No — no review received yet
+
+**Summary of feedback:**
+No reviewer feedback has come in yet.
+
+**How you responded:**
+No feedback to respond to.
+---
+
+### Reflection
+
+**What was harder than you expected?**
+Getting through the contribution workflow on Windows took more troubleshooting than I expected. The project instructions use `make`, which was unavailable in my PowerShell, and pushing also required resolving GitHub authentication. I had to find equivalent local checks and verify the branch and PR state rather than assume each step had completed. I also downloaded the wrong docker so set up was a hassle in general for me. 
+
+**What did you learn about working in a large codebase?**
+I learned to trace a documentation claim back to the implementation before describing it. Reading `HybridRetriever` helped me document the normalization, default weights, and missing-score behavior more accurately. This project helped me understand code documentation in general. I think previously I had tried to be detailed in my understanding but this really demanded my full understanding.
+
+**How did AI tools help — and where did they fall short?**
+AI tools helped me locate the relevant retrieval code, understand the scoring flow, organize a solution plan, and run focused validation. I still needed to check the code and command results myself. Generic setup instructions did not always match my Windows shell, and GitHub authentication could not be completed automatically.
+
+**What would you do differently if you started over?**
+I would verify my GitHub authentication and local development commands earlier, request a peer review as soon as I had a draft PR, and start the work earlier so there was more time to incorporate feedback before the deadline.
+
+**What are you most proud of from this module?**
+I followed the issue from selection through investigation, planning, documentation, local checks, and a submitted PR. I’m proud that I stayed focused on the requested documentation gap and actually applied my knowledge from earlier projects into this one. 
